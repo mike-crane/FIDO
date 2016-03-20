@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="storeApp">
+<head>
+    <meta charset="utf-8" />
+    <title>The Iron Store</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <div class="wrap">
+            <!-- logo -->
+            <img class="logo" src="images/logo2.png" />
+            <!-- ==================NAV BAR================= -->
+            <!-- Referenced this page for how to wire the nav bar for urls-
+            http://stackoverflow.com/questions/16199418/how-do-i-implement-the-bootstrap-navbar-active-class-with-angular-js -->
+            <nav>
+                <ul>
+                    <li><a id="products-button" href="#!/" ng-class="{activeSmall:part == 'products'}" >Products</a></li>
+                    <li><a id="about-button" href="#!/about" ng-class="{activeSmall:part == 'about'}">About</a></li>
+                    <li><a id="cart-button" href="#!/cart" ng-class="{activeSmall:part == 'cart'}">Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- ===============MAIN PRODUCT CONTENT ======================-->
+    <div style="position:relative">
+        <div class="template-container" ng-view></div>
+    </div>
+    <footer>
+        <div class="store-logo">FIDO'S Inc.</div>
+    </footer>
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+</body>
+</html>
