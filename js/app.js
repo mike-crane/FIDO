@@ -40,27 +40,5 @@ app.config(['$locationProvider', function($location) {
 }]);
 
 
-// function Ctrl($scope, $http, $routeParams, $location, $route) {
-//
-//    }
-//
-// angular.module('BookingFormBuilder', []).
-//         config(function ($routeProvider, $locationProvider) {
-//             $routeProvider.
-//                 when('/', {
-//                    template: 'I\'m on the home page',
-//                    controller: Ctrl,
-//                    pageKey: 'HOME' }).
-//                 when('/page1/create', {
-//                    template: 'I\'m on page 1 create',
-//                    controller: Ctrl,
-//                    pageKey: 'CREATE' }).
-//                 when('/page1/edit/:id', {
-//                    template: 'I\'m on page 1 edit {id}',
-//                    controller: Ctrl, pageKey: 'EDIT' }).
-//                 when('/page1/published/:id', {
-//                    template: 'I\'m on page 1 publish {id}',
-//                    controller: Ctrl, pageKey: 'PUBLISH' }).
-//                 otherwise({ redirectTo: '/' });
-//
+
 //
